@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="cabrera.css">
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+				<nav>
+					<h1 class="Logo"><span id="letterA">A</span>ndrei.</h1>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#about">About</a></li>						
+							<li><a href="#Portfolio">Portfolio</a></li>
+							<li><a href="mission.html">Mission | Vision</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+				</nav>
+             
+
+		</div> <!--End of class container-->
+		  <div id="homepage">
+	       	<img src="image (1).png" alt="photo" id="Bgimage">
+        	  <div class="paragraph">
+				 <p>Student/Aspiring Web Developer</p>
+				 <h1 style="font-size: 55px;">I'm John Andrei B. Cabrera From Philippines</h1>
+				 <p style="font-size: 40px;">Welcome to my Website Portfolio, <br> Explore to know more about me.</p>
+			  </div>
+			
+		  </div>
+	
+	</div>   <!--End of id header-->
+  
+                      	<!--ABOUT-->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col1"> 
+					<h1 id="sub-title">About Me</h1>
+					<p>
+						I'm a First Year College Student at Pamantasan Ng Cabuyao, Currently taking my Batchelor of Science in Computer Science degree.
+						I'm new in the technology industry but i am willing to learn everything i need to be a programmer.
+						i'm currently working on my skills still improving in HTML,CSS,JavaScript and Java programming languages.	     
+					</p>	
+					
+					  <div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+						<p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+					  </div>
+
+					  <div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Java Language</span><br>GUI and functionalities</li>
+							<li><span>HTML, CSS, JavaScript</span><br>Web Development</li>
+							<li><span>Editing</span><br>Editing Videos and Pictures</li>
+						</ul>
+					  </div>
+
+					  <div class="tab-contents" id="education">
+						<ul>
+							<li><span>Elementary (2011-2017)</span><br>Southville 1 Niugan Elementary School</li>
+							<li><span>High School (2017-2021)</span><br>Southville 1 Integrated National High School</li>
+							<li><span>Senior High School (2021-2023)</span><br>Pamantasan Ng Cabuyao</li>
+							<li><span>College (2023)</span><br>Pamantasan Ng Cabuyao</li>
+						</ul>
+					  </div>
+
+					  <div class="tab-contents" id="hobbies">
+						<ul>
+							<li><span>Sports</span><br>Basketball</li>
+							<li><span>Arts</span><br>Drawing</li>
+							<li><span>Watching</span><br>Watching Movies or Series</li>
+						</ul>
+					  </div>
+
+				</div>
+				<div class="about-col2">
+					<img src="Aboutimage.jpg" alt="" id="aboutimg">	
+				</div>
+			</div>
+		</div>
+	</div>  <!--End of id about-->
+	
+
+	<!--Portfolio part-->
+	<div id="Portfolio">
+		<div id="prelim">
+			<div id="activities">
+				            <div id="prelim-title"><h1>Prelim Activities</h1></div>
+				   <div id="prelim-contents">
+				      <img class="img" src="prelimact.jpg" alt=""> 
+				      <img class="img" src="missionAct.jpg" alt=""> 
+				      <img class="img" src="another-lab-act.jpg" alt=""> 
+				      <img class="img" src="labact.jpg" alt=""> 
+				      <img class="img" src="Longquiz.jpg" alt=""> 
+				          
+					        
+				   </div>		
+			</div>	
+		</div>
+
+		<div id="midterm">
+			<div id="midterm-activities">
+				 <div id="midterm-title"><h1>Midterm Activities</h1></div>
+
+				 <div id="midterm-contents">
+					<img src="mid-1.png" alt="">
+					<img src="midterm-2.png" alt="">
+					<img src="midterm-3.png" alt="">
+					<img src="practice1-3.png" alt="">
+				 </div>
+			</div>
+		  </div>
+	
+		  <div id="finals">
+			<div id="finals-activities">
+				 <div id="finals-title"><h1>Finals Activities</h1></div>
+
+				 <div id="finals-contents">
+					<img src="final1.png" alt="">
+					<img src="final2.png" alt="">
+					<img src="final3.png" alt="">
+					<img src="final4.png" alt="">
+					<img src="final5.png" alt="">
+				 </div>
+			</div>
+		  </div>
+	</div>   <!--End of Portfolio-->
+		
+	<!--mission vision-->
+    
+	
+		    
+
+
+	
+
+
+
+
+
+	
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+	
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}   
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+</body>
+</html>
+
